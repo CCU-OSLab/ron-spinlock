@@ -1,5 +1,5 @@
---- qspinlock.c	2021-05-02 17:10:27
-+++ qspinlock.c.new	2023-05-26 23:36:42
+--- a/kernel/locking/qspinlock.c	2021-05-02 17:10:27
++++ b/kernel/locking/qspinlock.c	2023-05-26 23:36:42
 @@ -22,6 +22,7 @@
  #include <linux/prefetch.h>
  #include <asm/byteorder.h>
@@ -54,7 +54,7 @@
 +long over_count = 0;
 +long under_count = 0;
 +
-+void _spin_０lock(struct qspinlock *spin)
++void _spin_lock(struct qspinlock *spin)
 +{
 +	int tspOrder = getTspOrder();
 +	//int zero = 0;
