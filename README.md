@@ -21,7 +21,7 @@ $ cd linux
 2. Use `ron.patch` to patch `/locking/qspinlock.c`
 
 ```bash
-$ path -p1 < <path_to_patch>
+$ patch -p1 < <path_to_patch>
 ```
 
 ## User space
